@@ -20,7 +20,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => { setLoading(false); }, 3000); // ローディングの時間3秒
+    setTimeout(() => { setLoading(false); }, 30000); // ローディングの時間3秒
   }, []);
 
   return (
