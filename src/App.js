@@ -1,21 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-function getRandomSize() {
-  const maxSize = 800;
-  const minSize = 400;
-  const width = Math.floor(Math.random() * (maxSize - minSize)) + minSize;
-  const height = Math.floor(Math.random() * (maxSize - minSize)) + minSize;
-  return `${width}/${height}`;
-}
-
 function App() {
  const images = [
-    `https://picsum.photos/${getRandomSize()}`,
-    `https://picsum.photos/${getRandomSize()}`,
-    `https://picsum.photos/${getRandomSize()}`,
-    `https://picsum.photos/${getRandomSize()}`,
-    `https://picsum.photos/${getRandomSize()}`,
+    "/images/mori_1.jpg",
+    "/images/mori_2.jpg",
+    "/images/mori_3.jpg",
   ];
   const [loading, setLoading] = useState(true);
 
