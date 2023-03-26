@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Loading from 'react-loading';
-
-const links = document.querySelectorAll("header a");
 
 function getRandomSize() {
   const maxSize = 800;
