@@ -12,7 +12,6 @@ function getRandomSize() {
   return `${width}/${height}`;
 }
 
-
 function App() {
  const images = [
     `https://picsum.photos/${getRandomSize()}`,
@@ -37,19 +36,24 @@ function App() {
             <h2>YUSUKE MORII</h2>
             <nav>
               <ul>
-                <li><a href="#">Biography</a></li>
+	        <li><a href="#">Biography</a></li>
                 <li><a href="#">Work</a></li>
-                <li><a href="https://www.instagram.com/yuu.mdat/" target="_blank">Instagram</a></li>
-                <li><a href="https://twitter.com/Fkjmusic" target="_blank">Twitter</a></li>
-          </ul>
+                <li><a href="https://www.instagram.com/lit.morifunism__/" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/yusuke_weil?s=21&t=h5_KYnSK2VHmBEclRKeAxg" target="_blank">Twitter</a></li>
+              </ul>
             </nav>
           </header>
           <main>
-            <div className="photo-grid">
-	      {images.map((url) => (
-	        <img src={url} alt="" key={url} />
-            ))}
-            </div>
+              <div className="photo-grid">
+	        {images.map((url) => (
+		  <div class="container">
+	            <img src={url} alt="" key={url} />
+		    <div class="mask">
+		      <div class="caption">Write a description of the dummy image here.</div>
+		    </div>
+		  </div>
+                ))}
+	      </div>
           </main>
         </>
       )}
