@@ -46,7 +46,7 @@ function App() {
 		  <div class="container">
 	            <img src={url} alt="" key={url} />
 		    <div class="mask">
-		      <div class="caption">Write a description of the dummy image here.</div>
+		      <div class="caption">Write a description of the image here.</div>
 		    </div>
 		  </div>
                 ))}
