@@ -34,7 +34,7 @@ function Home() {
         ) : (
           <>
             <header>
-              <h2>YUSUKE MORII</h2>
+              <h2><nav><Link to="/">YUSUKE MORII</Link></nav></h2>
               <nav>
                 <ul>
 	          <li><Link to="/Biography">Biography</Link></li>
